@@ -1,7 +1,7 @@
 #!/bin/bash
 cp -n ~/void-packages/hostdir/binpkgs/cosmic*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 cp -n ~/void-packages/hostdir/binpkgs/pop-launcher*x86_64.xbps ~/cosmic-repo/repo/x86_64/
-cp -n ~/void-packages/hostdir/binpkgs/catppuccin-sddm*x86_64.xbps ~/cosmic-repo/x86_64/
+cp -n ~/void-packages/hostdir/binpkgs/catppuccin-sddm*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 cp -n ~/void-packages/hostdir/binpkgs/cosmic-iso-flatpaks*x86_64.xbps ~/cosmic-repo/x86_64/
 xbps-rindex -a ~/cosmic-repo/repo/x86_64/*.xbps
 xbps-rindex -S ~/cosmic-repo/repo/x86_64/*.xbps --privkey ~/repo-private-key.pem --signedby "Bella Wagner <belladev109@proton.me>"
