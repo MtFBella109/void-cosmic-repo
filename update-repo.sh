@@ -1,5 +1,5 @@
 #!/bin/bash
-cp -n ~/void-packages/hostdir/binpkgs/cosmic*x86_64.xbps ~/cosmic-repo/repo/x86_64/
+cp -n ~/void-packages/hostdir/binpkgs/*cosmic*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 cp -n ~/void-packages/hostdir/binpkgs/pop-launcher*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 cp -n ~/void-packages/hostdir/binpkgs/setupIso*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 xbps-rindex -a ~/cosmic-repo/repo/x86_64/*.xbps
@@ -7,7 +7,7 @@ xbps-rindex -S ~/cosmic-repo/repo/x86_64/*.xbps --privkey ~/repo-private-key.pem
 xbps-rindex -r ~/cosmic-repo/repo/x86_64/
 
 if [ "$1" != "glibc" ]; then
-	cp -n ~/void-packages/hostdir/binpkgs/cosmic*musl.xbps ~/cosmic-repo/repo/x86_64-musl/
+	cp -n ~/void-packages/hostdir/binpkgs/*cosmic*musl.xbps ~/cosmic-repo/repo/x86_64-musl/
 	cp -n ~/void-packages/hostdir/binpkgs/pop-launcher*musl.xbps ~/cosmic-repo/repo/x86_64-musl/
 	cp -n ~/void-packages/hostdir/binpkgs/setupIso*musl.xbps ~/cosmic-repo/repo/x86_64-musl/
 	XBPS_TARGET_ARCH=x86_64-musl xbps-rindex -a ~/cosmic-repo/repo/x86_64-musl/*.xbps
