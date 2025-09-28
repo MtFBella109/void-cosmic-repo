@@ -3,7 +3,7 @@ cp -n ~/void-packages/hostdir/binpkgs/*cosmic*x86_64.xbps ~/cosmic-repo/repo/x86
 cp -n ~/void-packages/hostdir/binpkgs/pop-*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 cp -n ~/void-packages/hostdir/binpkgs/setupIso*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 cp -n ~/void-packages/hostdir/binpkgs/adw-gtk3*x86_64.xbps ~/cosmic-repo/repo/x86_64/
-cp -n ~/void-packages/hostdir/binbpkgs/locale1*x86_64.xbps ~/cosmic-repo/repo/x86_64/
+cp -n ~/void-packages/hostdir/binpkgs/locale1*x86_64.xbps ~/cosmic-repo/repo/x86_64/
 xbps-rindex -a ~/cosmic-repo/repo/x86_64/*.xbps
 xbps-rindex -S ~/cosmic-repo/repo/x86_64/*.xbps --privkey ~/repo-private-key.pem --signedby "Bella Wagner <belladev109@proton.me>"
 xbps-rindex -r ~/cosmic-repo/repo/x86_64/
